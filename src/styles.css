@@ -1,9 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  font-family: "Dancing Script", cursive;
 }
 
 input {
   padding: 1rem;
   width: 80%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.emoji {
+  font-size: 3rem;
 }

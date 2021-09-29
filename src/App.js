@@ -6,7 +6,15 @@ const emojiDictionary = {
   "🍕": "Pizza",
   "🥑": "Avocado",
   "🍝": "Spaghetti",
-  "🍩": "Donut"
+  "🍩": "Donut",
+  "🍲": "Soup",
+  "🥫": "Canned Food",
+  "🌭": "Hot Dog",
+  "🥪": "Sandwich",
+  "🌮": "Taco",
+  "🍿": "Popcorn",
+  "🍣": "Sushi",
+  "🥠": "Fortune Cookie"
 };
 var emojisWeKnow = Object.keys(emojiDictionary);
 export default function App() {
@@ -29,7 +37,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1 className="title">Hello !</h1>
       <input onChange={emojiInputHandler} />
       <h2>{meaning}</h2>
 
@@ -37,8 +45,9 @@ export default function App() {
       {emojisWeKnow.map(function (emoji) {
         return (
           <span
+            className="emoji"
             onClick={() => emojiClickHandler(emoji)}
-            style={{ fontsize: "2rem", padding: "0.5rem", cursor: "pointer" }}
+            style={{ fontsize: "3rem", padding: "0.5rem", cursor: "pointer" }}
             key={emoji}
           >
             {emoji}{" "}
