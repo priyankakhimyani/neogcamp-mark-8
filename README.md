@@ -1,2 +1,2 @@
 # neogcamp-mark-8
-Created with CodeSandbox
+Web app to display the meaning of food symbols
